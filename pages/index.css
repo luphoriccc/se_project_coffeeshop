@@ -1,3 +1,10 @@
+@import url(../blocks/page.css);
+@import url(../blocks/header.css);
+@import url(../vendor/normalize.css);
+
+
+
+
 .page {
     min-width: 1100px;
     max-width: 1600px;
@@ -5,4 +12,341 @@
     font-family: Inter, Arial, sans-serif;
     font-size: 16px;
     line-height: 20px;
+}
+
+.header {
+    padding: 30px 80px 40px;
+    min-height: 720px;
+    max-height: 800px;
+    height: 100vh;
+    flex-direction: column;
+    display: flex;
+    height: 100vh;
+    background-image: url(../images/background_header.svg);
+    background-size: cover;
+    background-position: right;
+    position: relative;
+}
+
+.header__image {
+    height: 568px;
+    width: 646px;
+    max-width: 568px;
+    position: absolute;
+    top: 124px;
+    right: 5px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav__logo {
+    position: relative;
+    left: -50px;
+    width: 105px;
+    height: 39px;
+}
+
+.nav__links {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    list-style-type: none;
+}
+
+.nav__link {
+    color: black;
+    text-decoration: none;
+}
+
+.header__title {
+    font-family: "Inter";
+    font-style: normal;
+    max-width: 729px;
+    font-size: 60px;
+    font-weight: 500;
+    line-height: 72px;
+    margin: 183px 0 0;
+    letter-spacing: -0.6px;
+}
+
+.header__description {
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
+    max-width: 683px;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 28px 0 0;
+}
+
+.header__span-accent {
+    display: block;
+    font-family: "Noto Serif";
+    font-style: italic;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 72px;
+    color: #2f80ed;
+}
+
+.header__footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+    left: 80px;
+    bottom: 40px;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #838383;
+}
+
+.header__paragraph {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    color: #838383;
+    margin: 0;
+    right: 80px;
+    bottom: 40px;
+}
+
+.recipes {
+    padding: 100px 80px 215px;
+    background-image: url(../images/background_recipes.svg);
+    background-color: #0a2750;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.recipes__videos {
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    color: white;
+}
+
+.recipes__iframe {
+    width: 480px;
+    height: 273px;
+    border: none;
+}
+
+.recipes__video-caption {
+    display: flex;
+    justify-content: space-between;
+}
+
+.recipes__title {
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+    color: white;
+    max-width: 580px;
+    top: 100px;
+    left: 80px;
+}
+
+.recipes__subtitle {
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: white;
+    top: 24px;
+    left: 80px;
+    max-width: 438px;
+}
+
+.reservation {
+    padding: 100px 0 120px;
+    background-image:url(../images/background_reservation.svg) ;
+    width:100%;
+    height:100%;
+    background-color: #D9E7FF;
+}
+
+.reservation__title {
+     margin: 0 0 80px;
+    text-align: center;
+    padding-bottom: 80px;
+    padding-top: 100px;
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.reservation__form {
+    margin: 0 auto;
+}
+
+.form {
+    max-width: 385px;
+}
+
+.form__fieldset {
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    border: none;
+}
+
+.form__label {
+    margin-bottom: 32px;
+    display: block;
+}
+
+.form__label_type_checkbox {
+    display: flex;
+    justify-content: center;
+    border-radius: 2px;
+    margin-right: 12px;
+}
+
+.form__input {
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 8px;
+    height:60px;
+}
+
+.form__button {
+    width: 100%;
+    border: none;
+    padding:0;
+    margin-bottom: 32px;
+    border-radius: 4px;
+    background-color:#2f80ed;
+    color: white;
+    height:60px;
+}
+
+.form__button:hover {
+    transition: opacity 0.3s;
+    
+}
+
+.form__checkbox {
+    margin-right: 12px;
+}
+
+.menu {
+    padding: 100px 0 100px;
+    background-image: url(../images/background_menu.svg);
+}
+
+.menu__title {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 0 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.menu__subtitle {
+    text-align: center;
+    max-width: 780px;
+    margin: 0 0 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.menu__cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 108px;
+    padding: 0;
+    margin: 0;
+    list-style-type:none;
+}
+
+.card {
+    width: 540px;
+
+}
+
+.card__list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    display:flex;
+    flex-direction: column;
+    gap:16px;
+}
+
+.card__title {
+    margin: 0 0 32px;
+}
+
+.card__list-item {
+    display: flex;
+}
+
+.card__list-divider {
+    border-bottom: 1px solid black;
+    flex-grow:1
+}
+
+.footer {
+    
+}
+
+.about {
+    background-color:#0A2850;
+    max-height: 432px;
+    overflow: hidden;
+    position: relative;
+}
+
+.about__circle {
+    width: 426px;
+    height:426px;
+    border-radius: 50%;
+    background-color: #2f80ed;
+    position: absolute;
+    top:-152px;
+    left:-129px;
+}
+
+.about__circle_animation_blurred {
+    
+}
+
+.about__title {
+   max-width: 251px;
+    color: white;
+    position: relative;
+   font-weight: 500;
+   font-size: 44px;
+   line-height: 52px;
+   padding-top: 100px;
+   padding-left: 80px;
+   z-index: 1;
+}
+
+.about__content {
+    max-width: 660px;
+    margin: 119px 80px 173px 0;
+    position: relative;
+}
+
+.about__paragraph {
+    margin: 0 0 20px;
 }
